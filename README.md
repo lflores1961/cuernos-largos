@@ -1,24 +1,44 @@
-# README
+#   CUERNOS LARGOS
+# de Aguascalientes A. C.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Web page for local football organization includes manager's app
+* Ruby version = 3.0.0
 
-Things you may want to cover:
+* Rails version = 6.1.4
 
-* Ruby version
-
-* System dependencies
+* System dependencies = Bootstrap 5, PopperJS, NodeJS (14.16.0) jQuery Webpacker yarn
 
 * Configuration
 
-* Database creation
+* Database = PostgreSQL 
 
-* Database initialization
+* Database creation = $rails db:setup
 
-* How to run the test suite
+* Database initialization = $rails db:migrate
+
+* How to run the test suite = No test suit
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
