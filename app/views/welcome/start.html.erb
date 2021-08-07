@@ -1,0 +1,24 @@
+<div class="container cabeza">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <%= image_tag "actitud02.png", class: "d-block w-100", alt: "actitud"  %>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag "disciplina02.png", class: "d-block w-100", alt: "disciplina" %>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag "equipo02.png", class: "d-block w-100", alt: "Valores de equipo" %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <%= render 'socios' %>
+    </div>
+    <div class="col">
+     <%= render 'categorias' %>
+    </div>
+</div>

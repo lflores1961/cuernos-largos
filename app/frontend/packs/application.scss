@@ -1,2 +1,22 @@
 // Import Bootstrap v5  
 @import "~bootstrap/scss/bootstrap";
+
+nav {
+  a {
+    color: chocolate;
+  }
+}
+
+main {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+hr.top {
+  height: 3px;
+  margin: 0;
+}
+
+.cabeza {
+  margin-top: 50px;
+}

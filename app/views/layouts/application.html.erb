@@ -11,6 +11,10 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'encabezado' %>
+    <%= render 'navegacion' %>
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>
