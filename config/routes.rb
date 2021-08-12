@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :contacts
   get 'static_pages/about', as: 'about-us'
   get 'static_pages/tournaments', as: 'tournaments'
   get 'static_pages/faq', as: 'faqs'

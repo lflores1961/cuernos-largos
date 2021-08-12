@@ -12,18 +12,28 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Torneos</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Administración
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Contactos</a></li>
-            <li><a class="dropdown-item" href="#">Jugadores</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Familias</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="<%= root_path %>">Inicio</a>
         </li>
-
+        <li class="nav-item">
+          <a class="nav-link" href="<%= faqs_path %>">Preguntas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<%= new_contact_path %>">Contacto</a>
+        </li>
+        <% if logged_in? %>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Administración
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Contactos</a></li>
+              <li><a class="dropdown-item" href="#">Jugadores</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Familias</a></li>
+            </ul>
+          </li>
+        <% end %>
       </ul>
 
       <%
