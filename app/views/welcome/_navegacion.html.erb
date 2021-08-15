@@ -27,10 +27,11 @@
               Administración
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Contactos</a></li>
+              <li><a class="dropdown-item" href="<%= contacts_path %>">Contactos</a></li>
               <li><a class="dropdown-item" href="#">Jugadores</a></li>
-              <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Familias</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Salir</a></li>
             </ul>
           </li>
         <% end %>
@@ -45,5 +46,13 @@
 <%
 =end%>
     </div>
+    <div class="d-flex">
+      <%= link_to '#' do %>
+        <i class="fas fa-bars"></i>
+      <% end %>
+    </div>
   </div>
 </nav>
+<hr class="stripeBurnt">
+<hr class="stripeWhite">
+<hr class="stripeBurnt">
