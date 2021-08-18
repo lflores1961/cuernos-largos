@@ -1,6 +1,11 @@
 // Import Bootstrap v5  
 @import "~bootstrap/scss/bootstrap";
 
+// Do nott use a caret with dropdown menu
+$caret-width:                 0em;
+$caret-vertical-align:        $caret-width * .85;
+$caret-spacing:               $caret-width * .85;
+
 nav {
   a {
     color: chocolate;

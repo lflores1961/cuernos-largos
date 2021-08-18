@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-md-3">
+  </div>
+  <div class="col-md-6">
+    <%= form_for(:session, url: login_path)  do |f| %>
+      <% content_for :footer do %>
+        <p id="notice"><%= notice %></p>
+      <% end %>
+      
+      <div>
+        <table class="table">
+
+          <tr>
+            <td><%= f.label :email %></td>
+            <td><%= f.text_field :email %></td>
+          </tr>
+          <tr>
+            <td><%= f.label :password %></td>
+            <td><%= f.password_field :password %></td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center;"><%= f.submit "Log in", class: "btn-lg success" %></td>
+          </tr>
+        </table>
+      </div>
+      
+    <% end %>
+  </div>
+  <div class="col-md-3">
+  </div>
+</div>

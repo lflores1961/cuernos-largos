@@ -21,20 +21,7 @@
         <li class="nav-item">
           <a class="nav-link" href="<%= new_contact_path %>">Contacto</a>
         </li>
-        <% if logged_in? %>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Administración
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="<%= contacts_path %>">Contactos</a></li>
-              <li><a class="dropdown-item" href="#">Jugadores</a></li>
-              <li><a class="dropdown-item" href="#">Familias</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Salir</a></li>
-            </ul>
-          </li>
-        <% end %>
+        
       </ul>
 
       <%
@@ -45,13 +32,31 @@
       </form> 
 <%
 =end%>
-    </div>
-    <div class="d-flex">
-      <%= link_to '#' do %>
+  <% if logged_in? %>
+    <div class="dropstart d-flex">
+      <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
         <i class="fas fa-bars"></i>
-      <% end %>
+      </a>
+
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <li><a class="dropdown-item" href="<%= contacts_path %>">Contactos</a></li>
+        <li><a class="dropdown-item" href="#">Jugadores</a></li>
+        <li><a class="dropdown-item" href="#">Familias</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><%= link_to "Salir", logout_path, method: "delete", class: "dropdown-item" %></li>
+      </ul>
     </div>
-  </div>
+  <% else %>
+    <div class="dropstart d-flex">
+      <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </a>
+
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <li><a class="dropdown-item" href="<%= login_path %>">Login</a></li>
+      </ul>
+    </div>
+  <% end %>
 </nav>
 <hr class="stripeBurnt">
 <hr class="stripeWhite">
