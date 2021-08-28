@@ -14,7 +14,23 @@
     </div>
   </div>
 </div>
+<hr>
 <div class="container">
+  <div class="row">
+    <div class="col">
+        <h5 style="color:#cc5500;">
+          En conjunto con la Asociación de Rugby del Estado de Aguascalientes A. C. Se impartirá una clínica de técnica segura de tackleo
+        </h5>
+        <p style="font-size:1.4em;">La técnica de tackleo utilizada en el Rugby ha sido reconocida como la más segura por equipos profesionales como 'Seattle Seahawks' y otros. 
+        En Aguascalientes nos preocupamos por tu seguridad y por evolucionar la práctica hacia técnicas más seguras, por lo que hablamos con nuestro amigo el <b>Lic. Luis Miguel Durón, presidente</b> de la Asociación de Rugby del Estado
+        para que imparta la clínica dirigida a coaches de los equipos de Aguascalientes. Si estás interesado en participar ponte en <%= link_to "contacto", new_contact_path %> con nosotros.
+        </p>
+    </div>
+    <div class="col">
+      <%= image_tag "clinicaTackleo.jpg", size: "276x427" %>
+    </div>
+  </div>
+  <hr>
   <div class="row">
     <div class="col">
       <%= render 'socios' %>
@@ -22,4 +38,5 @@
     <div class="col">
      <%= render 'categorias' %>
     </div>
+  </div>
 </div>
