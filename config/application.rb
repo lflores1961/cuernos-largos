@@ -34,5 +34,6 @@ module CuernosLargos
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    config.assets.paths << "#{Rails.root}/app/assets/videos"
   end
 end
